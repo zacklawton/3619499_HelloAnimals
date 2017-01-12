@@ -33,7 +33,13 @@ public class Mammal extends Animal {
 	 */
 	public void run() {
 		weight = super.getWeight() - 1;
-		super.setWeight(weight);
+		if(weight == super.getMinimumWeight()){
+			System.out.println("Weight has reached Minimum Weight");
+			super.setWeight(weight);
+		}
+		else{
+			super.setWeight(weight);
+		}
 
 	}
 

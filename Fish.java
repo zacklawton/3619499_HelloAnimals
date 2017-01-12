@@ -32,6 +32,13 @@ public class Fish extends Animal {
 	 */
 	public void swim() {
 		weight = super.getWeight() - 1;
-		super.setWeight(weight);
+		if(weight == super.getMinimumWeight()){
+			System.out.println("Weight has reached Minimum Weight");
+			super.setWeight(weight);
+		}
+		else{
+			super.setWeight(weight);
+		}
+		
 	}
 }

@@ -12,8 +12,8 @@ public class MainTester {
 
 	public static void main(String[] args) {
 
-		Mammal cat = new Mammal("18", "orange", "Cat", 20, 10);
-		Fish goldfish = new Fish("15", "gold", "Goldfish", 12, 10);
+		Mammal cat = new Mammal("18", "orange", "Cat", 10, 10);
+		Fish goldfish = new Fish("15", "gold", "Goldfish", 10, 10);
 		Bird robin = new Bird("10", "blue", "Robin", 10, 5);
 		Mammal hamster = new Mammal("9", "blonde", "Hamster", 6, 3);
 

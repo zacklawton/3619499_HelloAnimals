@@ -32,7 +32,13 @@ public class Bird extends Animal {
 	 */
 	public void fly() {
 		weight = super.getWeight() - 2;
-		super.setWeight(weight);
+		if(weight == super.getMinimumWeight()){
+			System.out.println("Weight has reached Minimum Weight!!!");
+			super.setWeight(weight);
+		}
+		else{
+			super.setWeight(weight);
+		}
 	}
 
 }
